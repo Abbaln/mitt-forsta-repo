@@ -66,11 +66,15 @@ for (let i = 1; i < 6; i++) {
 
 }
 
+// ----------
+
 const fruits = ["banan", "äpple", "körsbär"]
 
 for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i])
 }
+
+// while-loop
 
 let energi = 3;
 
@@ -80,3 +84,38 @@ while (energi > 0) {
 
 }
 console.log("Slut på energi! Måste vila!")
+
+// for-loop objekter i arrays
+
+let elever = [
+    {namn: "Anna", poang: 85},
+    {namn: "Ali", poang: 1000},
+    {namn: "Björn", poang: 10},
+]
+
+for (let i = 0; i < elever.length; i++){
+    console.log(elever[i].namn + " - " + elever[i].poang)
+}
+
+// for-loop for of
+
+let studenter = [
+    {namn: "Anna", poang: 85},
+    {namn: "Ali", poang: 1000},
+    {namn: "Björn", poang: 10},
+]
+
+for (const student of studenter) {
+    console.log(student.namn)
+}
+
+let launch = 5
+
+ for (let i = launch; i >= 1; i--){
+    if (i === 3){
+    console.log(i + " - halvvägs kvar! ")
+    }else{ 
+    console.log(i + " - Sekunder kvar ")
+    }
+}
+console.log("LIFTOFF!")
