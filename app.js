@@ -41,3 +41,42 @@ switch (trafficLight) {
     default:
         console.log("okänd signal!")
 }
+
+const weather = "regn";
+
+switch (weather) {
+    case "sol":
+        console.log("Du kan ha tröja och shorts idag")
+        break
+    case "regn":
+        console.log("Se till och ta med paraply eller regnjacka")
+        break
+    case "snö":
+     console.log("Ta på en varmjacka")
+     break
+
+     default:
+        console.log("Kolla ut genom fösntret")
+}
+
+// for-loop
+
+for (let i = 1; i < 6; i++) {
+    console.log(i)
+
+}
+
+const fruits = ["banan", "äpple", "körsbär"]
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i])
+}
+
+let energi = 3;
+
+while (energi > 0) {
+    console.log("Sprang ett varv! Energi kvar" + energi)
+    energi--
+
+}
+console.log("Slut på energi! Måste vila!")
