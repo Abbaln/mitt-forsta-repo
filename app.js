@@ -119,3 +119,35 @@ let launch = 5
     }
 }
 console.log("LIFTOFF!")
+
+
+// Övning
+
+const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"];
+
+for (const product of cart) {
+    if (product === "Godis") { 
+        console.log("Varning: Onödig vara!")
+
+    } else {
+        console.log("Köp: " + product)
+    }
+}
+
+
+// Funktioner
+
+const skapaKonto = (namn, age, roll = "Gäst") => {
+   console.log("Hej " + namn + age + roll)
+
+   if (age < 18) {
+    return {message: "du är INTE myndig"}
+   }
+
+   return {message: "du är myndig"}
+}
+
+const skapaKontoObject = skapaKonto("Abbas ", 33, " Student")
+
+console.log(skapaKontoObject.message)
+
